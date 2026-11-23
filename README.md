@@ -82,3 +82,8 @@ src/GoToHeaderFileFromInl/bin/Release/net472/GoToHeaderFileFromInl.vsix
 - 通过 DTE（`EnvDTE80.DTE2`）获取活动文档路径，使用 `ItemOperations.OpenFile` 以文本视图打开目标文件。
 - 命令定义与快捷键写在 `.vsct` 中，以全局作用域注册，因此在任意窗口按下快捷键都可用（无活动文档时会提示）。
 - 扩展只做同目录同名匹配，不搜索整个解决方案。
+
+## 许可证
+
+本项目基于 [MIT 许可证](LICENSE) 发布。
+

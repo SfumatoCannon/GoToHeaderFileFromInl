@@ -82,3 +82,8 @@ Debugging: open the solution in Visual Studio and have the project start `devenv
 - Uses DTE (`EnvDTE80.DTE2`) to get the active document path and `ItemOperations.OpenFile` to open the target in the text view.
 - Commands and key bindings live in the `.vsct` file and are registered globally, so the shortcut works from any window (a message is shown when there is no active document).
 - Only a same-directory, same-base-name lookup is performed; the whole solution is not scanned.
+
+## License
+
+Released under the [MIT License](LICENSE).
+
