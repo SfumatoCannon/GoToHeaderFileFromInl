@@ -1,0 +1,61 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.vsix
+*.pkgdef
+*.cto
+*.tlog
+
+# Visual Studio / VSIX
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide/
+*.VC.db
+*.VC.opendb
+*.opendb
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.ncb
+*.aps
+ipch/
+Backup*/
+_UpgradeReport_Files/
+UpgradeLog*.XML
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+
+# .NET / MSBuild
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.lastbuildstate
+.vspscc/
+*.scc
+
+# ReSharper / Rider
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidToggleHeaderInlPackage">
+    <Groups>
+      <Group guid="guidToggleHeaderInlCmdSet" id="ToolsMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidToggleHeaderInlCmdSet" id="cmdidToggleHeaderInl" priority="0x0100" type="Button">
+        <Parent guid="guidToggleHeaderInlCmdSet" id="ToolsMenuGroup"/>
+        <Strings>
+          <ButtonText>Go to Header / Inline File (.h / .inl)</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <!-- Default shortcut: Ctrl+K, Ctrl+0. Users can change it in Tools > Options > Environment > Keyboard. -->
+  <KeyBindings>
+    <KeyBinding guid="guidToggleHeaderInlCmdSet" id="cmdidToggleHeaderInl" editor="guidVSStd97"
+                key1="K" mod1="Control" key2="0" mod2="Control"/>
+  </KeyBindings>
+
+  <Symbols>
+    <GuidSymbol name="guidToggleHeaderInlPackage" value="{8e4f2a31-6b7d-4c15-9e3a-71d2c4b5a6f0}" />
+
+    <GuidSymbol name="guidToggleHeaderInlCmdSet" value="{a3c1e5d7-2f48-4b91-8c6e-5d0a9b7e4c21}">
+      <IDSymbol name="ToolsMenuGroup" value="0x1020" />
+      <IDSymbol name="cmdidToggleHeaderInl" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>
